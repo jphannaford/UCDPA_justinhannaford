@@ -96,6 +96,7 @@ To determine if there were multiple World Champions, I used a for loop to show a
 
 Charts 4: Accidents and Fatalities per decade
 
+<img src="https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png" width="50%" height="50%" />
 ![image](https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png width="50%" height="50%")
    
 
