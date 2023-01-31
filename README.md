@@ -96,7 +96,7 @@ To determine if there were multiple World Champions, I used a for loop to show a
 
 Charts 4: Accidents and Fatalities per decade
 
-![image](https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png)
+![image]("https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png" width="50%" height="50%")
    
 
 DataFrame ‘f1_accidents’ was created from ‘f1_results’ filtering on ‘positiontext’, ‘year’ and ‘status’. I grouped by year, creating a new column ’NumberOfAccidents’ and dropped all seasons post 2019. Finally, I plotted a line graph based on number of accidents and year collated per decade.
