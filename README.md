@@ -24,25 +24,25 @@ The following 3 datasets were chosen for my analysis:
 
 Python 3 is a powerful and flexible open-source programming language. Leveraging the structured workflow of Juypter Notebook my first step was to import all relevant Python packages that I needed within the project. Next, I imported 7 distinct datasets relating to Formula One: 2 via web scrapes and 5 csv files. Where I imported from the web, I created new DataFrames from the table. The following phase was dedicated to inspection and refinement of data.
 
-(Web scrape) Fatalities - A list of every Formula One driver who has died in a motor racing accident 
+Fatalities (Web scrape) - A list of every Formula One driver who has died in a motor racing accident 
 I checked the number and type of columns and if there were any null or duplicate values. Reviewing the first few columns I noticed that ‘Date of accident’ was in MM DD, YYYY format so I split this value using the comma as a delimiter to leave just the year. I then changed the type from object to int. I also observed that ‘Driver’ had the country in brackets after it so I split it using open bracket delimiter to leave just the name and reapplied.
 The ‘Event’ column shows all Formula One driver deaths irrespective of the types of race, so non-Grand Prix races were filtered out and saved. Finally I dropped all columns except for ‘Driver’ and ‘Date of accident’ and reviewed ‘f1_fatalities’
 
-(Web scrape) World Champions - A list of every driver who has won the Formula One world title
+World Champions (Web scrape) - A list of every driver who has won the Formula One world title
 
 I inspected the number and type of columns and checked if there were any null or duplicate values. Looking at the head and tail of the DataFrame, I noticed that there were 2 header and 2 footer rows. This was due to merged cells within Wikipedia, so I dropped one header row and both footer rows and reviewed to ensure that the issue was fixed.
 
 As with ‘f1_fatalities’ there was extra data within the ‘Season’ and ‘Driver’ columns so I split by open square bracket delimiter and reapplied to the DataFrame. Then I dropped all columns except for ‘Season’ and ‘Driver’, grouped by ‘Driver’ to create a new column, ‘TimesWorldChampion’, sorted descending and reviewed output of ‘f1_world_champions’
 
-(csv) Circuits – Contains every race track, host city and country within Formula One
+Circuits (csv) – Contains every race track, host city and country within Formula One
 
 I checked the number and type of columns and if there were any null or duplicate values. I also dropped all columns except for ‘circuitId’, ‘name’ and ‘country’ and reviewed ‘f1_circuits’
 
-(csv) Status – A mapping table used for race events mechanical failure, accidents and disqualifications etc.
+Status (csv) – A mapping table used for race events mechanical failure, accidents and disqualifications etc.
 
 I checked the number and type of columns and if there were any null or duplicate values and reviewed ‘f1_status’
 
-(csv) Drivers – A full list of every driver who has ever driven in a Formula One race
+Drivers (csv) – A full list of every driver who has ever driven in a Formula One race
 
 I checked the number and type of columns and if there were any null or duplicate values. I also dropped all columns except for ‘driverId',  'forename', 'surname' & 'nationality'. I then added a new column called ‘fullname’ by concatenating 'forename' and 'surname’ and moved it’s position to between ‘surname’ and ‘nationality’.
 
@@ -117,8 +117,13 @@ As part of this data analysis and mapping I was able to identify the following t
 **References**
 
 http://ergast.com/mrd/
+<br>
 https://en.wikipedia.org/wiki/List_of_Formula_One_fatalities
+<br>
 https://en.wikipedia.org/wiki/List_of_Formula_One_World_Drivers%27_Champions
+<br>
 https://en.wikipedia.org/wiki/Formula_One_engines
+<br>
 https://en.wikipedia.org/wiki/Prost%E2%80%93Senna_rivalry
+<br>
 https://www.makeuseof.com/f1-tech-in-road-car/
