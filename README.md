@@ -1,10 +1,10 @@
 # UCDPA_justinhannaford
 This repository contains all work related to UCD Introduction to Data Analytics
 
-Abstract
+**Abstract**
 This Introduction to Data Analytics project will focus on Formula One racing between 1950 to 2022 inclusive. Given that this timeframe captures the sport in it’s entirety, the analysis will look to uncover trends in subjects like the global reach of the sport, safety, reliability and individual driver performance over the life of the sport itself.
 
-Introduction
+**Introduction**
 
 Formula One racing is widely seen as the pinnacle of motor sport and has always interested me. My home city of Adelaide hosted the Australian Grand Prix between 1985 and 1996 and growing up, I attended many races. 
 
@@ -107,7 +107,8 @@ To determine if there were multiple World Champions, I used a for loop to show a
 
 Charts 4: Accidents and Fatalities per decade
 
-https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png   
+![image](https://github.com/jphannaford/UCDPA_justinhannaford/blob/main/accidents_per_decade.png)
+   
 
 DataFrame ‘f1_accidents’ was created from ‘f1_results’ filtering on ‘positiontext’, ‘year’ and ‘status’. I grouped by year, creating a new column ’NumberOfAccidents’ and dropped all seasons post 2019. Finally, I plotted a line graph based on number of accidents and year collated per decade.
 
